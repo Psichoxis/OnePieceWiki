@@ -1,0 +1,940 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+main{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    text-align: center;  
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+    color: white;
+    justify-content: center;
+    height: 200px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+/* FLECHA AL FOOTER */
+.flecha{
+    background-color: rgb(57, 187, 196);
+    border: none;
+    padding: 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.flecha:hover{
+    background-color: red;
+}
+/* FIN FLECHA AL FOOTER */
+
+/* FOOTER */
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-transform: capitalize;
+}
+a:hover{
+    color: rgba(255, 17, 0, 0.5);;
+}
+
+.footlist{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    line-height: 100px;
+    margin: 25px;
+} 
+
+/* FIN DEL FOOTER */
+
+/* HEADER FLEX INICIO */
+.flex-container {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+  }
+.flex-item{
+    width: max-content;
+    margin: 10px;
+  }
+
+/* FIN HEADER FLEX*/
+
+/* BARRA DESPLEGABLE INICIO */
+.barras{
+    background-color: rgb(57, 187, 196);
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.listas a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+.listas{
+    background-color: rgb(57, 187, 196);
+    width: 200px;
+    display: none;
+    text-decoration: none;
+}
+.listas a:hover{
+    background-color: red;
+}
+.desplegable:hover .listas{
+    display: block;
+}
+.desplegable{
+    text-decoration: none; 
+}
+/* BARRA DESPLEGABLE FIN */
+
+
+.titulos{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 55px;
+    padding: 25px;  
+}
+.titulonews{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 25px;
+    padding: 25px;  
+}
+
+.titulonews2{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 25px;
+    padding: 25px;  
+}
+
+.nombres{
+    color: rgb(255, 255, 255);
+    background-color: rgba(57, 187, 196, 0.753);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.newstitle{
+    color: rgba(161, 26, 26, 1);
+    background-color: rgba(57, 187, 196, 0.753);
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.textos{
+    font-size: 1.5rem; 
+	text-align: justify; 
+	background-color: rgba(247, 0, 0, 0.5);
+    color: black;
+	padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.textonews{
+    font-size: 1.5rem; 
+	text-align: justify;
+    color: white; 
+	background-color: rgba(192, 90, 90, 0.5);
+	padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+section h3 b{
+    background-color: rgba(0,0,0,0.5);
+    font-size: 30px;
+    color: white;
+}
+section h3 i{
+    background-color: rgba(255, 17, 0, 0.5);
+    font-size: 30px;
+    color: whitesmoke;
+}
+section h3{
+    margin-bottom: 0.5rem;
+}
+
+
+.primero{
+    background-color: rgba(0,0,0,0.5);
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+}
+.segundo{
+    background-color: rgba(255, 17, 0, 0.5);
+    font-size: 30px;
+    color: whitesmoke;
+}
+.mini1{
+    font-size: 20px;
+    color: salmon;
+    background-color: papayawhip;
+}
+.mini2{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: papayawhip;
+}
+
+
+.boximg{
+    background-color: rgba(57, 187, 196, 0.5);
+    margin: auto;
+    margin-top: 50px;
+    border-style: outset;
+    border-width: 15px;
+    border-color: rgba(161, 26, 26, 0.5);
+}
+.imgind{
+    max-width: 40rem;
+}
+
+.news{
+    position: static;
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
+}
+.box1{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 15px;
+    border-color: salmon;
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 2rem;
+}
+
+/* GRID DE SAGAS INICIO */
+.contenedor{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-areas: "item1 item2 item3"
+                         "item4 item5 item6"
+                         "item7 item8 item9";
+}
+.item{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.item:hover .info{
+    opacity: 1;
+    border-radius: 10px;
+}
+.info{
+    position: absolute;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(31, 31, 31, 0.9);
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+.info2{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    transition:margin 0.3s;
+    margin-top: 160px;
+}
+.arcos{
+    color: white;
+}
+.headline{
+    position: absolute;
+    margin-top: 20px;
+    transition:margin 0.2s;
+    font-size: 21px;
+    color: white;
+}
+.item:hover .headline{
+    margin-left: 2.3rem;
+}
+.item:hover .info2{
+    margin-top: 70px;
+}
+.span{
+    color: red;
+    font-style: italic;  
+}
+
+#item1{
+    background-image: url(/img/fondosagas1.png);
+    background-size: cover;
+    background-position: center;
+}
+#item2{
+    background-image: url(/img/fondosagas2.png);
+    background-size: cover;
+    background-position: center;
+}
+#item3{
+    background-image: url(/img/fondosagas3.png);
+    background-size: cover;
+    background-position: center;
+}
+#item4{
+    background-image: url(/img/fondosagas4.png);
+    background-size: cover;
+    background-position: center;
+}
+#item5{
+    background-image: url(/img/fondosagas5.png);
+    background-size: cover;
+    background-position: center;
+}
+#item6{
+    background-image: url(/img/fondosagas6.png);
+    background-size: cover;
+    background-position: center;
+}
+#item7{
+    background-image: url(/img/fondosagas7.png);
+    background-size: cover;
+    background-position: center;
+}
+#item8{
+    background-image: url(/img/fondosagas8.png);
+    background-size: cover;
+    background-position: center;
+}
+#item9{
+    background-image: url(/img/fondosagas9.png);
+    background-size: cover;
+    background-position: center;
+}
+/* FIN GRID DE SAGAS */
+
+/* CONTACTO BOX INICIO*/
+
+.contact1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.contact2{
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.contact2:hover{
+    background-color: salmon;
+}
+
+/* FIN CONTACTO BOX */
+
+
+
+/* ANIME - SAGAS INICIO */
+
+.container {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: 1s ease;
+  }
+  
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+  .sagatext{
+      text-align: center;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+  }
+  .sagacaps{
+      text-align: center;
+      font-size: 25px;
+      color: rgb(0, 0, 0);
+      font-style: italic;
+      background-color: salmon;
+  }
+  .sagaarcos{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+    background-color: rgba(250, 128, 114, 0.5);
+  }
+ 
+  /* FIN ANIME - SAGAS */
+
+  /* GRID PERSONAJES INICIO */
+  .intcontenedor {  
+    width: max-content;
+    display: grid; 
+    grid-template-columns: repeat(6, max-content); 
+    grid-template-rows: repeat(2, max-content); 
+    gap: 10px 10px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pers1 pers2 pers3 pers4 pers5 pers6"
+      "pers7 pers8 pers9 pers10 pers11 pers12";
+    margin:auto;
+    margin-top: 1rem;
+  }
+  .pers{
+    min-height: 5rem;
+    min-width: 5rem;
+    background-color: rgba(57, 187, 196, 0.5);
+    border: 2px dashed rgb(255, 255, 255);
+    }
+  
+  /* FIN GRID PERSONAJES */
+
+@media only screen and (min-width: 50px) and (max-width: 480px){
+body{
+    background-size: cover;
+    width: 100%;
+}
+
+.news{
+    width: fit-content;
+    margin-top: 2rem;
+}
+.box1{
+    padding: 0.5rem;
+    border-width: 0.5rem;
+    border-color: salmon;
+    width: fit-content;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.imgind{
+    max-width: 100%;
+}
+.imgint{
+    max-width: 100%;
+    max-height: 20rem;
+}
+.nombres{
+    font-size: 1.1rem;
+}
+section h3 b{
+    font-size: 0.9rem;
+}
+section h3 i{
+    font-size: 0.9rem;
+}
+.textos{
+    font-size: 0.8rem;
+}
+.newstitle{
+    font-size: 1rem;
+}
+.titulonews2{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1rem;
+    padding: 25px;  
+}
+.flecha{    
+    padding: 0.5rem;
+}
+.barras{
+    padding: 0.5rem;
+}
+.listas{
+    width: fit-content;
+}
+.listas a{
+    font-size: 1rem;
+}
+.titulos{
+    font-size: 1.5rem;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    height: max-content;
+    padding-top: 1rem;
+    text-align: center;
+    row-gap: 1rem;
+}
+a{
+    font-size: 1.5rem;
+}
+a:hover{
+    color: rgba(255, 17, 0, 0.5);;
+}
+
+.footlist{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    line-height: 1rem;
+    margin: 1rem;
+} 
+
+section h3{
+    font-size: 0.8rem;
+}
+small{
+    font-size: 0.6rem;
+}
+/* FIN DEL FOOTER */
+
+.intcontenedor {  
+    width: 320px;
+    display: grid; 
+    grid-template-columns: repeat(3, max-content); 
+    grid-template-rows: repeat(4, max-content); 
+    grid-template-areas:
+        "pers1 pers2 pers3"
+        "pers4 pers5 pers6"
+        "pers7 pers8 pers9"
+        "pers10 pers11 pers12";
+    justify-content: center;
+  }
+
+.contact1{
+    font-size: 1.2rem;
+}
+.contact2{
+    font-size: 1.2rem;
+}
+.videos{
+    width: 280px;
+    height: fit-content;
+}
+.videosnews{
+    width: 280px;
+    height: 20rem;
+}
+.ahref{
+    font-size: 0.8rem;
+}
+.mini1{
+    font-size: 0.8rem;
+}
+.mini2{
+    font-size: 0.8rem;
+}
+.textonews{
+    font-size: 0.9rem;
+}
+/* GRID SAGAS INICIO */
+.contenedor{
+    width: auto;
+    height: auto;
+    grid-template-areas: "item1"
+                         "item2" 
+                         "item3"
+                         "item4" 
+                         "item5"
+                         "item6"
+                         "item7" 
+                         "item8" 
+                         "item9";
+}
+.item{
+    width: 10rem;
+    height: 10rem;
+    margin: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.info{
+    width: 10rem;
+    height: 10rem;
+    
+}
+.item:hover .headline{
+    margin-left: 2rem;
+}
+.info2{
+    font-size: 0.7rem;
+}
+.headline{
+    font-size: 0.7rem;
+}
+.arcos{
+    font-size: 0.7rem;
+}
+.item:hover .info2{
+    margin-top: 40px;
+}
+/* FIN GRID SAGAS */
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    body{
+        background-size: cover;
+        width: 100%;
+    }
+    
+    .news{
+        width: fit-content;
+        margin-top: 2rem;
+    }
+    .box1{
+        padding: 0.5rem;
+        border-width: 0.8rem;
+        border-color: salmon;
+        max-width: 400px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        
+    }
+    
+    .imgind{
+        max-width: 100%;
+    }
+    .imgint{
+        max-width: 100%;
+        max-height: 20rem;
+    }
+    .nombres{
+        font-size: 1.2rem;
+    }
+    section h3 b{
+        font-size: 1rem;
+    }
+    section h3 i{
+        font-size: 1rem;
+    }
+    .textos{
+        font-size: 0.8rem;
+    }
+    .newstitle{
+        font-size: 1rem;
+    }
+    .flecha{    
+        padding: 0.5rem;
+    }
+    .barras{
+        padding: 0.5rem;
+    }
+    .listas{
+        width: fit-content;
+    }
+    .listas a{
+        font-size: 1rem;
+    }
+    .titulos{
+        font-size: 1.5rem;
+    }
+    /* FOOTER */
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        justify-content: center;
+        height: max-content;
+        padding-top: 1rem;
+        text-align: center;
+        row-gap: 1rem;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    a:hover{
+        color: rgba(255, 17, 0, 0.5);;
+    }
+    
+    .footlist{
+        list-style: none;
+        display: inline;
+        text-align: center;
+        line-height: 1rem;
+        margin: 1rem;
+    } 
+    
+    section h3{
+        font-size: 0.8rem;
+    }
+    small{
+        font-size: 0.6rem;
+    }
+    /* FIN DEL FOOTER */
+
+    .intcontenedor {  
+        width: 320px;
+        display: grid; 
+        grid-template-columns: repeat(4, max-content); 
+        grid-template-rows: repeat(3, max-content); 
+        grid-template-areas:
+            "pers1 pers2 pers3 pers4"
+            "pers5 pers6 pers7 pers8"
+            "pers9 pers10 pers11 pers12";
+        justify-content: center;
+      }
+
+    .contact1{
+        font-size: 1.3rem;
+    }
+    .contact2{
+        font-size: 1.3rem;
+    }
+    
+    .videos{
+        width: 390px;
+        height: fit-content;
+    }
+    .ahref{
+        font-size: 0.8rem;
+    }
+    .mini1{
+        font-size: 0.8rem;
+    }
+    .mini2{
+        font-size: 0.8rem;
+    }
+
+    /* GRID SAGAS INICIO */
+    .contenedor{
+        width: auto;
+        height: auto;
+        grid-template-areas: "item1 item2"
+                         "item3 item4"
+                         "item5 item6"
+                         "item7 item8"
+                         "item9 item10";
+    }
+    .item{
+        width: 10rem;
+        height: 10rem;
+        margin: 1px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    .info{
+    width: 10rem;
+    height: 10rem;
+    
+    }
+    .item:hover .headline{
+        margin-left: 2rem;
+    }
+    .info2{
+        font-size: 0.7rem;
+    }
+    .headline{
+        font-size: 0.7rem;
+    }
+    .arcos{
+        font-size: 0.7rem;
+    }
+    .item:hover .info2{
+        margin-top: 40px;
+    }
+    /* FIN GRID SAGAS */
+
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1023px){
+        body{
+            background-size: cover;
+            width: 100%;
+        }
+        
+        .news{
+            width: fit-content;
+            margin-top: 2rem;
+        }
+        .box1{
+            padding: 0.5rem;
+            border-width: 1rem;
+            border-color: salmon;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+        }
+        
+        .imgind{
+            max-width: 100%;
+        }
+        .imgint{
+            max-width: 100%;
+            max-height: 20rem;
+        }
+        .nombres{
+            font-size: 1.5rem;
+        }
+        section h3 b{
+            font-size: 1.2rem;
+        }
+        section h3 i{
+            font-size: 1.2rem;
+        }
+        .textos{
+            font-size: 1rem;
+        }
+        .newstitle{
+            font-size: 1rem;
+        }
+        .flecha{    
+            padding: 0.8rem;
+            
+        }
+        .barras{
+            padding: 0.8rem;
+        }
+        .listas{
+            width: fit-content;
+        }
+        .listas a{
+            font-size: 1rem;
+        }
+        .titulos{
+            font-size: 2rem;
+        }
+        /* FOOTER */
+        footer{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            height: max-content;
+            padding-top: 1rem;
+            text-align: center;
+            row-gap: 1rem;
+        }
+        a{
+            font-size: 1.5rem;
+        }
+        a:hover{
+            color: rgba(255, 17, 0, 0.5);;
+        }
+        
+        .footlist{
+            list-style: none;
+            display: inline;
+            text-align: center;
+            line-height: 1rem;
+            margin: 1rem;
+        } 
+        
+        section h3{
+            font-size: 0.9rem;
+        }
+        small{
+            font-size: 0.7rem;
+        }
+        /* FIN DEL FOOTER */
+        
+        .videos{
+            width: 630px;
+        }
+        .ahref{
+            font-size: 1.1rem;
+        }
+        .mini1{
+            font-size: 1.1rem;
+        }
+        .mini2{
+            font-size: 1.1rem;
+        }
+    
+        /* GRID SAGAS INICIO */
+        .contenedor{
+            width: auto;
+            height: auto;
+            grid-template-areas: "item1 item2 item3"
+                                 "item4 item5 item6"
+                                 "item7 item8 item9";
+        }
+        .item{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .info{
+            width: 15rem;
+            height: 15rem;
+        
+        }
+        .item:hover .headline{
+            margin-left: 2.3rem;
+        }
+        .info2{
+            font-size: 1.2rem;
+        }
+        .headline{
+            font-size: 1.2rem;
+        }
+        .arcos{
+            font-size: 1.2rem;
+        }
+        .item:hover .info2{
+            margin-top: 45px;
+        }
+        /* FIN GRID SAGAS */
+
+        }
+

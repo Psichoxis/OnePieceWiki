@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One piece - Contacto</title>
+    <link rel="icon" href="img/32x.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/627ac988d6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="flex-container">
+            <div class="flex-item">
+                <button class="flecha"><a href=#foot><i class="fa fa-arrow-down"></i></a></button>
+            </div>
+            <div class="flex-item">
+                <picture>
+                    <source srcset="img/banner4.png" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="img/banner3.png" media="(min-width: 481px) and (max-width: 767px)">
+                    <source srcset="img/banner2.png" media="(min-width: 50px) and (max-width: 480px)">
+                    <img src="img/banner.png" alt="Logotipo de One piece"> <!-- imagen principal -->
+                </picture>
+            </div>
+            <div class="flex-item">
+                <nav class="desplegable">
+                    <button class="barras"><i class="fa fa-bars"></i></button>
+                        <ul class="listas">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="integrantes.html">Integrantes</a></li>
+                            <li><a href="anime.html">Anime</a></li>
+                        </ul>  
+                    </nav>
+            </div>
+          </div>
+        </header>
+    
+    <main>
+        <h2 class="titulos">Suscríbete a nuestro Newsletter!</h2>
+        <p class="titulonews2">Si quiere enterarse antes que nadie y estar al día con las novedades del mundo de One piece rellene los siguientes campos para poder contactarnos con usted!
+        <br>
+        Tambien si desea puede dejarnos un comentario con su <i><b>Duda / Consulta / Sugerencia</b></i> para poder brindarle un mejor servicio!</p>
+        <br>
+ <section class="form">
+        <section class="box1">
+        <!-- <form action="enviar.php" method="post" enctype="text/plain"> --> 
+        <label for="nombre" class="contact1">Nombre :</label>
+        <input type="text" name="nombre" class="contact2" placeholder="Ingrese su nombre" required>
+        <br>
+        <label for="apellido" class="contact1">Apellido :</label>
+        <input type="text" name="apellido" class="contact2" placeholder="Ingrese su apellido" required>
+        <br>
+        <label for="email" class="contact1">Email  :</label>
+        <input type="email" class="contact2" placeholder="Ingrese su email" required> 
+        <br>
+        <label for="content" class="contact1">Que contenido prefiere? :</label>
+        <select name="content" class="contact2">
+            <option value="1">Episodios</option> 
+            <option value="2">Spoilers</option> 
+            <option value="3">Manga</option>
+            <option value="4">Novedades</option>
+            <option value="5">Datos Curiosos</option>
+        </select>
+        <br>
+        <label for="comentarios" class="contact1">Comentarios :</label>
+        <br>
+        <textarea name="comentarios" class="contact1" cols="20" rows="5" placeholder="Déjenos su comentario!"></textarea>
+        <br>
+        <label for="newsletter" class="contact1">¿Desea recibir el Newsletter?</label>
+        <input type="checkbox" name="newsletter">
+        <br>
+        <br>
+        <input type="reset" value="Resetear Formulario" class="contact2">
+        <input type="submit" value="Enviar" class="contact2"> 
+        <br>
+        <br>
+    </form>
+</section>
+</section>
+<br>
+</main>
+<footer id="foot">
+    <section>
+     <h3>Síguenos en nuestras redes!</h3>
+         <ul>
+           <li class="footlist"><a href="https://www.facebook.com/Psichoxis" class="fa fa-facebook" alt="facebook"></a></li>
+           <li class="footlist"><a href="https://twitter.com/_PoliRdgz" class="fa fa-twitter" alt="twitter"></a></li>
+           <li class="footlist"><a href="https://www.instagram.com/poli_rdgz/" class="fa fa-instagram" alt="instagram"></a></li>
+        </ul>
+    </section>
+
+    <section>
+     <h3>Únete a nuestro servidor de Discord!</h3>
+         <ul>
+           <li class="footlist"><a href="https://discord.gg/ckpTuYyZ2Z" class="fab fa-discord" alt="discord"></a></li>
+        </ul>
+    </section>
+
+    <section>
+      <h3>Contacto/Soporte</h3>
+        <ul>
+           <li class="footlist"><a href="https://wa.me/5493425948195" class="fa fa-whatsapp" alt="numero de contacto"></a></li>
+           <li class="footlist"><a href="mailto:poli.cs@hotmail.com" class="fa fa-envelope" alt="email de contacto"></a></li>
+        </ul>
+    </section>
+    <section>
+        <!-- Seccion vacia para que el small quede en la columna del medio -->
+    </section>
+    <section>
+        <small>&copy; 2021 <b>One Piece Wiki</b> - Todos los derechos reservados.</small>
+    </section>
+    
+ </footer>
+</body>
+</html>
