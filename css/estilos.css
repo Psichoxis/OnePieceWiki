@@ -29,8 +29,6 @@ footer{
     text-align: center;
 }
 
-
-
 /* FLECHA AL FOOTER */
 .flecha{
     background-color: rgb(57, 187, 196);
@@ -114,23 +112,42 @@ a:hover{
 
 
 .titulos{
-    background-color: rgba(0,0,0,0.5);
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
     color: white;
     font-size: 55px;
-    padding: 25px;  
+    padding: 25px; 
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 .titulonews{
     background-color: rgba(0,0,0,0.5);
     color: white;
     font-size: 25px;
-    padding: 25px;  
+    padding: 25px; 
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
 }
 
 .titulonews2{
     background-color: rgba(0,0,0,0.5);
     color: white;
     font-size: 25px;
-    padding: 25px;  
+    padding: 25px;
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 5s;  
 }
 
 .nombres{
@@ -224,7 +241,7 @@ section h3{
     width: fit-content;
 }
 .box1{
-    background-color: rgb(255, 255, 255);
+    background: radial-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.3));
     padding: 15px;
     border-radius: 10px;
     border-style: outset;
@@ -234,7 +251,12 @@ section h3{
     margin: auto;
     margin-bottom: 15px;
     margin-top: 2rem;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
 }
+
 
 /* GRID DE SAGAS INICIO */
 .contenedor{
@@ -437,14 +459,33 @@ section h3{
       "pers7 pers8 pers9 pers10 pers11 pers12";
     margin:auto;
     margin-top: 1rem;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-delay: 0s;
   }
-  .pers{
-    min-height: 5rem;
-    min-width: 5rem;
+ 
+    .pers{
+    height: 5rem;
+    width: 5rem;
     background-color: rgba(57, 187, 196, 0.5);
     border: 2px dashed rgb(255, 255, 255);
+    transition: all .5s;
+    }
+    .pers:hover{
+        background-color: brown;
+        height: 7rem;
+        width: 7rem;
     }
   
+    @keyframes aparecer{
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
   /* FIN GRID PERSONAJES */
 
 @media only screen and (min-width: 50px) and (max-width: 480px){
@@ -646,7 +687,7 @@ small{
         max-width: 400px;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        
+
     }
     
     .imgind{
