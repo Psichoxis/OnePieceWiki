@@ -24,7 +24,7 @@ footer{
     background-color: black;
     color: white;
     justify-content: center;
-    height: 200px;
+    height: max-content;
     padding-top: 20px;
     text-align: center;
 }
@@ -165,15 +165,7 @@ a:hover{
     text-align: center;
     border-radius: 10px;
 }
-.textos{
-    font-size: 1.5rem; 
-	text-align: justify; 
-	background-color: rgba(247, 0, 0, 0.5);
-    color: black;
-	padding: 15px;
-    text-decoration: none;
-    border-radius: 10px;
-}
+
 .textonews{
     font-size: 1.5rem; 
 	text-align: justify;
@@ -488,6 +480,34 @@ section h3{
     }
   /* FIN GRID PERSONAJES */
 
+  a.nav-link{
+    color: rgb(0, 0, 0) !important;
+    background-color: rgba(250, 128, 114);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+a.nav-link:hover{
+    color: white !important;
+}
+.card-title{
+    background-color: rgba(57, 187, 196, 0.753);
+}
+.btn-danger{
+    background-color: rgba(250, 128, 114);
+    border-color: rgba(250, 128, 114);
+}
+.navbar{
+    padding: 0px;
+}
+.bg-dark{
+    background-color: black !important;
+}
+.card-img-top{
+    max-height: 500px !important;
+    max-width: fit-content !important;
+    margin: auto;
+}
+
 @media only screen and (min-width: 50px) and (max-width: 480px){
 body{
     background-size: cover;
@@ -510,9 +530,9 @@ body{
 .imgind{
     max-width: 100%;
 }
-.imgint{
-    max-width: 100%;
-    max-height: 20rem;
+.card-img-top{
+    max-width: 100% !important;
+    max-height: 20rem !important;
 }
 .nombres{
     font-size: 1.1rem;
@@ -523,10 +543,10 @@ section h3 b{
 section h3 i{
     font-size: 0.9rem;
 }
-.textos{
+.card-text{
     font-size: 0.8rem;
 }
-.newstitle{
+.card-title{
     font-size: 1rem;
 }
 .titulonews2{
@@ -693,9 +713,9 @@ small{
     .imgind{
         max-width: 100%;
     }
-    .imgint{
-        max-width: 100%;
-        max-height: 20rem;
+    .card-img-top{
+        max-width: 100% !important;
+        max-height: 20rem !important;
     }
     .nombres{
         font-size: 1.2rem;
@@ -706,10 +726,10 @@ small{
     section h3 i{
         font-size: 1rem;
     }
-    .textos{
+    .card-text{
         font-size: 0.8rem;
     }
-    .newstitle{
+    .card-title{
         font-size: 1rem;
     }
     .flecha{    
@@ -858,9 +878,9 @@ small{
         .imgind{
             max-width: 100%;
         }
-        .imgint{
-            max-width: 100%;
-            max-height: 20rem;
+        .card-img-top{
+            max-width: 100% !important;
+            max-height: 20rem !important;
         }
         .nombres{
             font-size: 1.5rem;
@@ -871,15 +891,14 @@ small{
         section h3 i{
             font-size: 1.2rem;
         }
-        .textos{
+        .card-text{
             font-size: 1rem;
         }
-        .newstitle{
+        .card-title{
             font-size: 1rem;
         }
         .flecha{    
             padding: 0.8rem;
-            
         }
         .barras{
             padding: 0.8rem;
