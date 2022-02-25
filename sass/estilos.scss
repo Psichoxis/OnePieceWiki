@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+$color1: rgb(57, 187, 196);
+$color2: rgb(250, 128, 114);
+$color3: rgb(0, 0, 0);
+$color4: rgba(0, 0, 0, 0.5);
+$color5: rgb(255, 255, 255);
+$size1: 1rem;
+$size2: 2rem;
+
+header{
+    background-color: $color3;
+}
+
+main{
+    text-align: center;  
+    background: {
+        image: url(../img/fondo.jpg);
+        size: cover;
+        attachment: fixed;
+        position: bottom;
+    }
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: $color3;
+    color: $color5;
+    justify-content: center;
+    height: max-content;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: $color5;
+    font-size: 25px;
+    &:hover{
+        color: $color1;
+    }
+}
+
+.footlist{
+    display: inline;
+    text-align: center;
+    line-height: 100px;
+    margin: 25px;
+} 
+
+/* FIN DEL FOOTER */
+
+/* HEADER FLEX INICIO */
+.flex-container {
+    display: flex;
+    background-color: $color3;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    width: max-content;
+    margin: 10px;
+}
+
+/* FIN HEADER FLEX*/
+
+/* BARRA DESPLEGABLE INICIO */
+.barras{
+    background-color: $color1;
+    color: $color5;
+    border: none;
+    padding: 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.listas{
+    background-color: $color1;
+    width: 200px;
+    display: none;
+    text-decoration: none;
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: $color5;
+        display: block;
+        padding: 10px;
+        &:hover{
+            background-color: $color1;
+        }
+    }
+}
+.desplegable{
+    text-decoration: none;
+    &:hover .listas{
+        display: block;
+    }
+}
+/* BARRA DESPLEGABLE FIN */
+
+
+.titulos{
+    background: linear-gradient($color3, rgba(0,0,0,0));
+    color: $color5;
+    font-size: 55px;
+    padding: 25px;
+    animation: {
+        name: titulo;
+        iteration-count: 1;
+        duration: 5s;
+    }
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.titulonews{
+    background-color: $color4;
+    color: $color5;
+    font-size: 25px;
+    padding: 25px;
+    animation: {
+        name: titulo;
+        iteration-count: 1;
+        duration: 5s;
+    }
+}
+
+.titulonews2{
+    background-color: $color4;
+    color: $color5;
+    font-size: 25px;
+    padding: 25px;
+    animation: {
+        name: titulo;
+        iteration-count: 1;
+        duration: 5s;
+    } 
+}
+
+.nombres{
+    color: $color5;
+    background-color: $color1;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.newstitle{
+    color: $color2;
+    background-color: $color1;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.textos{
+    background-color: $color2;
+    color: $color5;
+}
+.textonews{
+    font-size: 1.5rem; 
+	text-align: justify;
+    color: $color5; 
+	background-color: $color2;
+	padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+section h3{
+    margin-bottom: 0.5rem;
+    b{
+        background-color: $color4;
+        font-size: 30px;
+        color: $color5;
+    }
+    i{
+        background-color: $color2;
+        font-size: 30px;
+        color: $color5;
+    }
+}
+
+.ahref{
+    color: red;
+}
+.primero{
+    background-color: $color4;
+    font-size: 30px;
+    color: $color5;
+    margin-top: 10px;
+}
+.segundo{
+    background-color: $color2;
+    font-size: 30px;
+    color: $color5;
+}
+.mini1{
+    font-size: 20px;
+    color: $color2;
+    background-color: $color5;
+}
+.mini2{
+    font-size: 20px;
+    color: $color3;
+    background-color: $color5;
+}
+
+
+.boximg{
+    background-color: $color1;
+    margin: auto;
+    margin-top: 50px;
+    border-style: outset;
+    border-width: 15px;
+    border-color: $color2;
+}
+.imgind{
+    max-width: 40rem;
+}
+
+.news{
+    position: static;
+    margin: auto;
+    margin-top: 50px;
+    width: fit-content;
+}
+.box1{
+    background: radial-gradient($color5,rgba(255, 255, 255, 0.3));
+    padding: 15px;
+    border: {
+        radius: 10px;
+        style: outset;
+        width: 15px;
+        color: $color2;
+    }
+    width: 40rem;
+    margin: auto;
+    margin: {
+        bottom: 15px;
+        top: $size2;
+    }
+    animation: {
+        name: aparecer;
+        duration: 3s;
+        iteration-count: 1;
+        delay: 0s;
+    }
+}
+
+
+/* GRID DE SAGAS INICIO */
+.contenedor{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-areas:"item1 item2 item3"
+                        "item4 item5 item6"
+                        "item7 item8 item9";
+}
+.item{
+    width: 250px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 10px;
+    &:hover .info{
+        opacity: 1;
+        border-radius: 10px;
+    }
+    &:hover .headline{
+        margin-left: 2.3rem;
+    }
+    &:hover .info2{
+        margin-top: 70px;
+    }
+}
+.info{
+    position: absolute;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(31, 31, 31, 0.9);
+    transition: opacity 0.2s;
+    opacity: 0;
+}
+.info2{
+    color: $color5;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    transition:margin 0.3s;
+    margin-top: 160px;
+}
+.arcos{
+    color: $color5;
+    list-style: none;
+    text-align: center;
+    margin-left: -$size2;
+}
+.headline{
+    position: absolute;
+    margin-top: 20px;
+    transition:margin 0.2s;
+    font-size: 21px;
+    color: $color5;
+}
+.span{
+    color: $color2;
+    font-style: italic;  
+}
+
+#item1{
+    background: {
+        image: url(/img/fondosagas1.png);
+        size: cover;
+        position: center;
+    }
+}
+#item2{
+    background: {
+        image: url(/img/fondosagas2.png);
+        size: cover;
+        position: center;
+    }
+}
+#item3{
+    background: {
+        image: url(/img/fondosagas3.png);
+        size: cover;
+        position: center;
+    }
+}
+#item4{
+    background: {
+        image: url(/img/fondosagas4.png);
+        size: cover;
+        position: center;
+    }
+}
+#item5{
+    background: {
+        image: url(/img/fondosagas5.png);
+        size: cover;
+        position: center;
+    }
+}
+#item6{
+    background: {
+        image: url(/img/fondosagas6.png);
+        size: cover;
+        position: center;
+    }
+}
+#item7{
+    background: {
+        image: url(/img/fondosagas7.png);
+        size: cover;
+        position: center;
+    }
+}
+#item8{
+    background: {
+        image: url(/img/fondosagas8.png);
+        size: cover;
+        position: center;
+    }
+}
+#item9{
+    background: {
+        image: url(/img/fondosagas9.png);
+        size: cover;
+        position: center;
+    }
+}
+/* FIN GRID DE SAGAS */
+
+/* CONTACTO BOX INICIO*/
+
+.contact1{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.contact2{
+    background-color: $color4;
+    font-size: 25px;
+    color: $color3;
+    &:hover{
+        background-color: $color1;
+    }
+}
+
+/* FIN CONTACTO BOX */
+
+/* GRID PERSONAJES INICIO */
+.intcontenedor {  
+    width: max-content;
+    display: grid; 
+    grid-template-columns: repeat(6, max-content); 
+    grid-template-rows: repeat(2, max-content); 
+    gap: 10px 10px; 
+    grid-auto-flow: row;
+    grid-template-areas:
+        "pers1 pers2 pers3 pers4 pers5 pers6"
+        "pers7 pers8 pers9 pers10 pers11 pers12";
+    margin:auto;
+    margin-top: $size1;
+    animation: {
+        name: aparecer;
+        iteration-count: 1;
+        duration: 5s;
+        delay: 0s;
+    }
+}
+.pers{
+    height: 5rem;
+    width: 5rem;
+    background-color: $color1;
+    border: 2px dashed $color5;
+    transition: all .5s;
+    &:hover{
+        background-color: $color2;
+        height: 7rem;
+        width: 7rem;
+    }
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+    }
+/* FIN GRID PERSONAJES */
+
+a.nav-link{
+    color: $color3 !important;
+    background-color: $color2;
+    margin: {
+        left: 5px;
+        right: 5px;
+    }
+    &:hover{
+        color: $color1 !important;
+    }
+}
+.card-title{
+    background-color: $color1;
+}
+.btn-danger{
+    background-color: $color2;
+    border-color: $color2;
+}
+.navbar{
+    padding: 0px;
+}
+.bg-dark{
+    background-color: $color3 !important;
+}
+.card-img-top{
+    max-height: 500px !important;
+    max-width: fit-content !important;
+    margin: auto;
+}
+.videos{
+    width: 578px;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 480px){
+body{
+    background-size: cover;
+    width: 100%;
+}
+
+.news{
+    width: fit-content;
+    margin-top: $size2;
+}
+.box1{
+    padding: 0.5rem;
+    width: fit-content;
+    border: {
+        width: 0.5rem;
+        color: $color2;
+    }
+    margin: {
+        bottom: $size2;
+        top: $size2;
+    }
+}
+
+.imgind{
+    max-width: 100%;
+}
+.card-img-top{
+    max-width: 100% !important;
+    max-height: 20rem !important;
+}
+.nombres{
+    font-size: 1.1rem;
+}
+section h3{
+    font-size: 0.8rem;
+    b{
+        font-size: 0.9rem;
+    }
+    i{
+        font-size: 0.9rem;
+    }
+}
+.card-text{
+    font-size: 0.8rem;
+}
+.card-title{
+    font-size: $size1;
+}
+.titulonews2{
+    background-color: $color4;
+    color: $color5;
+    font-size: $size1;
+    padding: 25px;  
+}
+.barras{
+    padding: 0.5rem;
+}
+.listas{
+    width: fit-content;
+    a{
+        font-size: $size1;
+    }
+}
+.titulos{
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $color3;
+    color: $color5;
+    justify-content: center;
+    height: max-content;
+    padding-top: $size1;
+    text-align: center;
+    row-gap: $size1;
+}
+a{
+    font-size: 1.5rem;
+    &:hover{
+        color: $color1;
+    }
+}
+
+.footlist{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    line-height: $size1;
+    margin: $size1;
+} 
+
+small{
+    font-size: 0.6rem;
+}
+/* FIN DEL FOOTER */
+
+.intcontenedor {  
+    width: 320px;
+    display: grid;
+    grid-template-columns: repeat(3, max-content); 
+    grid-template-rows: repeat(4, max-content); 
+    grid-template-areas:
+        "pers1 pers2 pers3"
+        "pers4 pers5 pers6"
+        "pers7 pers8 pers9"
+        "pers10 pers11 pers12";
+    justify-content: center;
+}
+
+.contact1{
+    font-size: 1.2rem;
+}
+.contact2{
+    font-size: 1.2rem;
+}
+.videos{
+    width: 290px;
+    height: fit-content;
+}
+.videosnews{
+    width: 290px;
+    height: 20rem;
+}
+.ahref{
+    font-size: 0.8rem;
+}
+.mini1{
+    font-size: 0.8rem;
+}
+.mini2{
+    font-size: 0.8rem;
+}
+.textonews{
+    font-size: 0.9rem;
+}
+/* GRID SAGAS INICIO */
+.contenedor{
+    width: auto;
+    height: auto;
+    grid-template-areas:"item1"
+                        "item2" 
+                        "item3"
+                        "item4" 
+                        "item5"
+                        "item6"
+                        "item7" 
+                        "item8" 
+                        "item9";
+}
+.item{
+    width: 10rem;
+    height: 10rem;
+    margin: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    &:hover .headline{
+        margin-left: $size2;
+    }
+    &:hover .info2{
+        margin-top: 40px;
+    }
+}
+.info{
+    width: 10rem;
+    height: 10rem;
+    
+}
+.info2{
+    font-size: 0.7rem;
+}
+.headline{
+    font-size: 0.7rem;
+}
+.arcos{
+    font-size: 0.7rem;
+}
+/* FIN GRID SAGAS */
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+body{
+    background-size: cover;
+    width: 100%;
+}
+.news{
+    width: fit-content;
+    margin-top: $size2;
+}
+.box1{
+    padding: 0.5rem;
+    max-width: 400px;
+    border: {
+        width: 0.8rem;
+        color: $color2;
+    }
+    margin: {
+        top: $size2;
+        bottom: $size2;
+    }
+}
+.imgind{
+    max-width: 100%;
+}
+.card-img-top{
+    max-width: 100% !important;
+    max-height: 20rem !important;
+}
+.nombres{
+    font-size: 1.2rem;
+}
+section h3{
+    font-size: 0.8rem;
+    b{
+        font-size: $size1;
+    }
+    i{
+        font-size: $size1;
+    }
+}
+.card-text{
+    font-size: 0.8rem;
+}
+.card-title{
+    font-size: $size1;
+}
+.barras{
+    padding: 0.5rem;
+}
+.listas{
+    width: fit-content;
+    a{
+        font-size: $size1;
+    }
+}
+.titulos{
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $color3;
+    color: $color5;
+    justify-content: center;
+    height: max-content;
+    padding-top: $size1;
+    text-align: center;
+    row-gap: $size1;
+}
+a{
+    font-size: 1.5rem;
+    &:hover{
+        color: $color1;
+    }
+}
+.footlist{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    line-height: $size1;
+    margin: $size1;
+} 
+small{
+    font-size: 0.6rem;
+}
+
+/* FIN DEL FOOTER */
+
+.intcontenedor {  
+    width: 320px;
+    display: grid; 
+    grid-template-columns: repeat(4, max-content); 
+    grid-template-rows: repeat(3, max-content); 
+    grid-template-areas:
+        "pers1 pers2 pers3 pers4"
+        "pers5 pers6 pers7 pers8"
+        "pers9 pers10 pers11 pers12";
+    justify-content: center;
+}
+
+.contact1{
+    font-size: 1.3rem;
+}
+.contact2{
+    font-size: 1.3rem;
+}
+
+.videos{
+    width: 370px;
+    height: fit-content;
+}
+.ahref{
+    font-size: 0.8rem;
+}
+.mini1{
+    font-size: 0.8rem;
+}
+.mini2{
+    font-size: 0.8rem;
+}
+
+/* GRID SAGAS INICIO */
+.contenedor{
+    width: auto;
+    height: auto;
+    grid-template-areas:"item1 item2"
+                        "item3 item4"
+                        "item5 item6"
+                        "item7 item8"
+                        "item9 item10";
+}
+.item{
+    width: 10rem;
+    height: 10rem;
+    margin: 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+    &:hover .headline{
+        margin-left: $size2;
+    }
+    &:hover .info2{
+        margin-top: 40px;
+    }
+}
+.info{
+    width: 10rem;
+    height: 10rem;
+
+}
+.info2{
+    font-size: 0.7rem;
+}
+.headline{
+    font-size: 0.7rem;
+}
+.arcos{
+    font-size: 0.7rem;
+}
+
+/* FIN GRID SAGAS */
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px){
+body{
+    background-size: cover;
+    width: 100%;
+}
+.news{
+    width: fit-content;
+    margin-top: $size2;
+}
+.box1{
+    padding: 0.5rem;
+    border: {
+        width: $size1;
+        color: $color2;
+    }
+    margin: {
+        top: $size2;
+        bottom: $size2;
+    }
+}
+.imgind{
+    max-width: 100%;
+}
+.card-img-top{
+    max-width: 100% !important;
+    max-height: 20rem !important;
+}
+.nombres{
+    font-size: 1.5rem;
+}
+
+.card-text{
+    font-size: $size1;
+}
+.card-title{
+    font-size: $size1;
+}
+.flecha{    
+    padding: 0.8rem;
+}
+.barras{
+    padding: 0.8rem;
+}
+.listas{
+    width: fit-content;
+}
+.listas a{
+    font-size: $size1;
+}
+.titulos{
+    font-size: $size2;
+}
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $color3;
+    color: $color5;
+    justify-content: center;
+    height: max-content;
+    padding-top: $size1;
+    text-align: center;
+    row-gap: $size1;
+}
+a{
+    font-size: 1.5rem;
+    &:hover{
+        color: $color1;
+    }
+}
+
+.footlist{
+    list-style: none;
+    display: inline;
+    text-align: center;
+    line-height: $size1;
+    margin: $size1;
+} 
+
+section h3{
+    font-size: 0.9rem;
+    b{
+        font-size: 1.2rem;
+    }
+    i{
+        font-size: 1.2rem;
+    }
+}
+small{
+    font-size: 0.7rem;
+}
+/* FIN DEL FOOTER */
+.videos{
+    width: 590px;
+}
+.ahref{
+    font-size: 1.1rem;
+}
+.mini1{
+    font-size: 1.1rem;
+}
+.mini2{
+    font-size: 1.1rem;
+}
+/* GRID SAGAS INICIO */
+.contenedor{
+    width: auto;
+    height: auto;
+    grid-template-areas:"item1 item2 item3"
+                        "item4 item5 item6"
+                        "item7 item8 item9";
+}
+.item{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+    margin: 10px;
+    &:hover .headline{
+        margin-left: 2.3rem;
+    }
+    &:hover .info2{
+        margin-top: 45px;
+    }
+}
+.info{
+    width: 15rem;
+    height: 15rem;
+}
+.info2{
+    font-size: 1.2rem;
+}
+.headline{
+    font-size: 1.2rem;
+}
+.arcos{
+    font-size: 1.2rem;
+}
+/* FIN GRID SAGAS */
+
+}
