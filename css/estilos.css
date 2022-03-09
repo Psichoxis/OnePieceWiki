@@ -444,7 +444,7 @@
   }
   * body .card-img-top {
     max-width: 100% !important;
-    max-height: 20rem !important;
+    max-height: 25rem !important;
   }
   * body .nombres {
     font-size: 1.1rem;
@@ -496,7 +496,7 @@
     height: 20rem;
   }
   * body .ahref {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   * body .mini1 {
     font-size: 0.8rem;
